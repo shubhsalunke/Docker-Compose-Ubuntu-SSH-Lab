@@ -1,0 +1,60 @@
+services:
+  user1:
+    build:
+      context: .
+      args:
+        USERNAME: user1
+    container_name: ubuntu-user1
+    ports:
+      - "2201:22"
+    restart: unless-stopped
+
+  user2:
+    build:
+      context: .
+      args:
+        USERNAME: user2
+    container_name: ubuntu-user2
+    ports:
+      - "2202:22"
+    restart: unless-stopped
+
+  user3:
+    build:
+      context: .
+      args:
+        USERNAME: user3
+    container_name: ubuntu-user3
+    ports:
+      - "2203:22"
+    restart: unless-stopped
+
+  user4:
+    build:
+      context: .
+      args:
+        USERNAME: user4
+    container_name: ubuntu-user4
+    ports:
+      - "2204:22"
+    restart: unless-stopped
+
+  user5:
+    build:
+      context: .
+      args:
+        USERNAME: user5
+    container_name: ubuntu-user5
+    ports:
+      - "2205:22"
+    restart: unless-stopped
+
+  user6:
+    build:
+      context: .
+      args:
+        USERNAME: user6
+    container_name: ubuntu-user6
+    ports:
+      - "2206:22"
+    restart: unless-stopped
